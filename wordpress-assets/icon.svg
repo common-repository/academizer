@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 401 401" style="enable-background:new 0 0 401 401;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#8770AA;stroke:#000000;stroke-miterlimit:10;}
+	.st1{opacity:0.19;clip-path:url(#SVGID_2_);fill:#070808;enable-background:new    ;}
+	.st2{fill:#33A0DA;}
+	.st3{fill:#FFFFFF;}
+	.st4{opacity:0.19;fill:#070808;enable-background:new    ;}
+	.st5{fill:#AB1F57;}
+	.st6{fill:none;}
+	.st7{font-family:'MyriadPro-Regular';}
+	.st8{font-size:48px;}
+</style>
+<rect x="0.5" y="0.5" class="st0" width="400" height="400"/>
+<g id="XMLID_55_">
+	<g>
+		<defs>
+			<circle id="SVGID_1_" cx="195.6" cy="181.6" r="331"/>
+		</defs>
+		<clipPath id="SVGID_2_">
+			<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+		</clipPath>
+		<polygon id="XMLID_67_" class="st1" points="316.6,23.6 526.1,204.1 522.1,512.6 298.6,503.1 61.1,334.6 		"/>
+	</g>
+</g>
+<g id="XMLID_39_">
+	<path id="XMLID_134_" class="st2" d="M316.6,23.6c0,0,8,3.5,8.5,11h-9.5H84.1c0,0-32.5,25,0,51h232h6c0,0,8.5-2,8.5,10v232.5
+		c0,0-0.5,7.5-9.5,12H72.6c0,0-11.5-2-11.5-15.5v-285c0,0,2-15,16-15.5h239.5V23.6z"/>
+	<path id="XMLID_52_" class="st3" d="M315.1,34.6v51h-231c0,0-32-22,0-51H315.1z"/>
+	<path id="XMLID_50_" class="st4" d="M61.1,97.6c0,0,5,5.5,16.5,5.5h246c0,0,4-0.5,7-7v53.5c0,0-5.5,6-22.5,6h-232
+		c0,0-12.5-2-15.5-6.5V97.6H61.1z"/>
+	<path id="XMLID_43_" class="st4" d="M61.1,257.1c0,0,5,5.5,16.5,5.5h246c0,0,4-0.5,7-7v53.5c0,0-5.5,6-22.5,6h-232
+		c0,0-12.5-2-15.5-6.5v-51.5H61.1z"/>
+	<polygon id="XMLID_40_" class="st5" points="233.6,85.6 233.6,233.1 259.6,206.6 284.1,231.1 284.1,85.6 	"/>
+</g>
+<rect x="-51" y="190.4" class="st6" width="441.8" height="20.9"/>
+<rect x="-71.2" y="247.9" class="st6" width="462.7" height="21.6"/>
+<text transform="matrix(1 0 0 1 75.3335 302.8105)" class="st3 st7 st8">Academizer</text>
+</svg>

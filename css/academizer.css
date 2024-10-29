@@ -1,0 +1,329 @@
+.reference h1, .reference h2, .reference h3, .reference h4, .reference h5, .reference h6,
+.reference .h1, .reference .h2, .reference .h3, .reference .h4, .reference .h5, .reference .h6 {
+    font-family: "Lato", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+}
+
+/* Reference themes */
+
+.dark { color: #f0f0f0; }
+
+.dark .reference{
+    background: rgba(0, 0, 0, 0.35);
+    box-shadow: 0px 4px 4px -4px #ccc;
+    -webkit-box-shadow: 0px 4px 4px -4px #ccc;
+}
+
+.dark .ref-citation { color: #c0c0c0; }
+
+.light { color: #000; }
+
+.light .reference{
+    background: #fff;
+    box-shadow: 0px 4px 4px -4px #ccc;
+    -webkit-box-shadow: 0px 4px 4px -4px #ccc;
+}
+
+.light .ref-citation { color: #1a1a1a; }
+
+/* Reference fields */
+
+.ref-me { font-weight: bold; }
+
+.reference .ref-content .ref-title {
+    margin-bottom:8px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 0px;
+}
+
+.reference .ref-citation p {
+    margin-bottom: 0px;
+}
+
+.reference .ref-journal {
+    font-style: italic;
+}
+
+.reference .ref-series, .reference .ref-issue_date {
+    font-weight: bold;
+    color: #f0f0f0;
+}
+
+/* Entry type & button colors */
+
+.ref-entry_article {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff
+}
+
+.ref-entry_article:hover {
+    color: #fff;
+    background-color: #0069d9;
+    border-color: #0062cc
+}
+
+.ref-entry_inproceedings {
+    color: #fff;
+    background-color: #28a745;
+    border-color: #28a745
+}
+
+.ref-entry_inproceedings:hover {
+    color: #fff;
+    background-color: #218838;
+    border-color: #1e7e34
+}
+
+.ref-btn-slides {
+    color: #fff;
+    background-color: #C75033;
+    border-color: #C75033
+}
+
+.ref-btn-slides:hover {
+    color: #fff;
+    background-color: #953b26;
+    border-color: #953b26
+}
+
+.ref-btn-doi {
+    color: #fff;
+    background-color: #28a745;
+    border-color: #28a745
+}
+
+.ref-btn-doi:hover {
+    color: #fff;
+    background-color: #218838;
+    border-color: #1e7e34
+}
+
+.ref-btn-git {
+    color: #fff;
+    background-color: #5b2da3;
+    border-color: #5b2da3
+}
+
+.ref-btn-git:hover {
+    color: #fff;
+    background-color: #44217a;
+    border-color: #44217a
+}
+
+/* General Layout */
+
+#academizer-credits {
+    margin: 16px;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.reference .ref-thumbnail {
+    text-align: center;
+}
+
+.reference .ref-label {
+    display: block;
+    text-align: center;
+    margin: 8px auto;
+    width: 50%;
+}
+
+.ref-cmds > .btn {
+    margin: 8px 10px;
+    width: 25%;
+}
+
+.ref-cmds {
+    margin: 0 auto;
+}
+
+.btn-text {
+    font-size: 0.8rem;
+}
+
+.reference .ref-cmds .ref-icon {
+    height: 32px;
+}
+
+.reference .ref-cmds .ref-icon-container {
+     width: 48px;
+     height: 48px;
+}
+
+.reference .ref-cmds .ref-icon {
+    width: 32px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.reference {
+    border-bottom: 2px solid #555555;
+    margin-bottom: 16px;
+    padding: 16px;
+}
+
+@media (min-width: 992px) {
+    #academizer-credits, #references {
+        max-width: 900px;
+    }
+
+    .reference {
+        padding: 20px;
+        height: 232px;
+        position: relative;
+        margin: 0 16px;
+        box-sizing: border-box;
+    }
+
+    .reference .ref-thumbnail {
+        display: inline-block;
+    }
+
+    .ref-thumbnail, .ref-content {
+        top: 16px;
+    }
+
+    .reference .ref-thumbnail img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .reference .ref-content {
+        position: absolute;
+        left: 170px;
+        margin: 0px 20px;
+    }
+
+    .reference .ref-label {
+        position: absolute;
+        border-radius: 8px;
+        text-align: center;
+        width: 120px;
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        height: 32px;
+        color: #ffffff;
+        left: 35px;
+        bottom: 0px;
+        line-height: 1.15rem;
+    }
+
+    .reference .ref-label.ref-label-disabled {
+        pointer-events: none;
+        cursor: default;
+        opacity: 0.75;
+    }
+
+    /* buttons */
+    .reference .ref-cmds {
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+    }
+
+    .btn-label {
+        position: relative;
+        left: -12px;
+        display: inline-block;
+        background: rgba(0, 0, 0, 0.15);
+        border-radius: 3px 0 0 3px;
+    }
+
+    .btn-labeled {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .ref-cmds > .btn {
+        height: 32px;
+        min-width: 32px;
+        box-sizing: border-box;
+        padding: 0px;
+        margin: 0 0 0 4px;
+        overflow: hidden;
+        width: 32px;
+        transition: width 1s .35s;
+        position: relative;
+        display: inline-block;
+    }
+
+    .reference .ref-cmds .ref-icon-container {
+        background: rgba(0, 0, 0, 0.15);
+        border-radius: 3px 0 0 3px;
+        display: inline-block;
+        padding: 4px 4px 2px 3px;
+        width: 32px;
+        height: 32px;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+
+    .reference .ref-cmds .ref-icon {
+        width: 24px;
+        height: 24px;
+    }
+
+    .ref-btn-label {
+        position: absolute;
+        display: inline-block;
+        left: 32px;
+        bottom: 0px;
+        width: 92px;
+        height: 32px;
+        line-height: 2rem;
+    }
+
+    .btn-text {
+        display: inline-block;
+        font-weight: bold;
+        text-align: center;
+        font-size: 1.15em;
+    }
+
+    .ref-cmds > .btn:hover {
+        width: 128px;
+        transition: width 1s;
+    }
+}
+
+.bs-tooltip-top .tooltip-inner, .bs-tooltip-bottom .tooltip-inner { background-color: #5b2da3; }
+.bs-tooltip-top .arrow::before { border-top-color: #5b2da3; }
+.bs-tooltip-bottom .arrow::before { border-bottom-color: #5b2da3; }
+
+/* SVG Icons */
+.ref-icon-file {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' style='width:24px;height:24px' viewBox='0 0 24 24'%3E%3Cpath fill='%23FFFFFF' d='M13,9H18.5L13,3.5V9M6,2H14L20,8V20A2,2 0 0,1 18,22H6C4.89,22 4,21.1 4,20V4C4,2.89 4.89,2 6,2M15,18V16H6V18H15M18,14V12H6V14H18Z' /%3E%3C/svg%3E");
+}
+
+.ref-icon-bib {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' style='width:24px;height:24px' viewBox='0 0 24 24'%3E%3Cpath fill='%23FFFFFF' d='M8,3A2,2 0 0,0 6,5V9A2,2 0 0,1 4,11H3V13H4A2,2 0 0,1 6,15V19A2,2 0 0,0 8,21H10V19H8V14A2,2 0 0,0 6,12A2,2 0 0,0 8,10V5H10V3M16,3A2,2 0 0,1 18,5V9A2,2 0 0,0 20,11H21V13H20A2,2 0 0,0 18,15V19A2,2 0 0,1 16,21H14V19H16V14A2,2 0 0,1 18,12A2,2 0 0,1 16,10V5H14V3H16Z' /%3E%3C/svg%3E");
+}
+
+.ref-icon-video {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' style='width:24px;height:24px' viewBox='0 0 24 24'%3E%3Cpath fill='%23FF0000' d='M20,4.4C19.4,4.2,15.7,4,12,4S4.6,4.2,4,4.4c-1.6,0.5-2,4-2,7.6c0,3.6,0.4,7.1,2,7.6c0.6,0.2,4.3,0.4,8,0.4 s7.4-0.2,8-0.4c1.6-0.5,2-4,2-7.6C22,8.4,21.6,4.9,20,4.4z'/%3E%3Cpolygon fill='%23FFFFFF' points='10,7.5 10,16.5 16,12 '/%3E%3C/svg%3E");
+}
+
+.ref-icon-link {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' style='width:24px;height:24px' viewBox='0 0 24 24'%3E%3Cpath fill='%23fff' d='M10.59,13.41C11,13.8 11,14.44 10.59,14.83C10.2,15.22 9.56,15.22 9.17,14.83C7.22,12.88 7.22,9.71 9.17,7.76V7.76L12.71,4.22C14.66,2.27 17.83,2.27 19.78,4.22C21.73,6.17 21.73,9.34 19.78,11.29L18.29,12.78C18.3,11.96 18.17,11.14 17.89,10.36L18.36,9.88C19.54,8.71 19.54,6.81 18.36,5.64C17.19,4.46 15.29,4.46 14.12,5.64L10.59,9.17C9.41,10.34 9.41,12.24 10.59,13.41M13.41,9.17C13.8,8.78 14.44,8.78 14.83,9.17C16.78,11.12 16.78,14.29 14.83,16.24V16.24L11.29,19.78C9.34,21.73 6.17,21.73 4.22,19.78C2.27,17.83 2.27,14.66 4.22,12.71L5.71,11.22C5.7,12.04 5.83,12.86 6.11,13.65L5.64,14.12C4.46,15.29 4.46,17.19 5.64,18.36C6.81,19.54 8.71,19.54 9.88,18.36L13.41,14.83C14.59,13.66 14.59,11.76 13.41,10.59C13,10.2 13,9.56 13.41,9.17Z' /%3E%3C/svg%3E");
+}
+
+.ref-icon-talk {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' style='width:24px;height:24px' viewBox='0 0 24 24'%3E%3Cpath fill='%23FFF' d='M20,2H4A2,2 0 0,0 2,4V22L6,18H20A2,2 0 0,0 22,16V4C22,2.89 21.1,2 20,2Z' /%3E%3C/svg%3E");
+}
+
+.ref-icon-slide {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' style='width:24px;height:24px' viewBox='0 0 24 24'%3E%3Cpath fill='%23FFF' d='M19,16H5V8H19M19,3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3Z' /%3E%3C/svg%3E");
+}
+
+.ref-icon-git {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' style='width:24px;height:24px' viewBox='0 0 24 24'%3E%3Cpath fill='%23FFF' d='M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z' /%3E%3C/svg%3E");
+}
+
+.ref-icon-quotes {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' style='width:24px;height:24px' viewBox='0 0 24 24'%3E%3Cpath fill='%23fff' d='M14,17H17L19,13V7H13V13H16M6,17H9L11,13V7H5V13H8L6,17Z' /%3E%3C/svg%3E");
+}
